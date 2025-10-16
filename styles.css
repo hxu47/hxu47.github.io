@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
+    --primary-color:  #3b82f6;
+    --secondary-color: #10b981;
     --text-color: #1f2937;
     --text-light: #6b7280;
     --bg-color: #ffffff;
@@ -47,7 +47,7 @@ section {
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to right, #10b981, #3b82f6);
     margin: 20px auto 0;
     border-radius: 2px;
 }
@@ -420,8 +420,8 @@ section {
 .projects-grid {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    max-width: 1000px;
+    gap: 50px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -433,6 +433,7 @@ section {
     transition: all 0.3s;
     display: flex;
     flex-direction: row;
+    min-height: 320px;
 }
 
 .project-card:hover {
@@ -441,8 +442,8 @@ section {
 }
 
 .project-image {
-    width: 350px;
-    min-width: 350px;
+    width: 450px;
+    min-width: 450px;
     height: auto;
     overflow: hidden;
 }
@@ -459,7 +460,7 @@ section {
 }
 
 .project-info {
-    padding: 25px;
+    padding: 30px;
 }
 
 .project-info h3 {
@@ -512,8 +513,10 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .skill-category {
@@ -530,7 +533,7 @@ section {
 }
 
 .skill-category h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
     color: var(--primary-color);
     display: flex;
@@ -543,9 +546,10 @@ section {
 }
 
 .skill-category li {
-    padding: 10px 0;
+    padding: 8px 0;
     color: var(--text-light);
     border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
 }
 
 .skill-category li:last-child {
@@ -685,6 +689,7 @@ footer {
 
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     /* Timeline Mobile Adjustments */
