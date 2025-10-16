@@ -417,6 +417,18 @@ section {
 }
 
 /* Projects Section */
+.projects-intro {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.projects-intro p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
 .projects-grid {
     display: flex;
     flex-direction: column;
